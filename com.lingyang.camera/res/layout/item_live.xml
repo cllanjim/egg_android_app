@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_cover"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:id="@+id/tv_cname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <!-- <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:id="@+id/tv_nickname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/tv_cname"
+            /> -->
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_ro"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        >
+        <ImageButton 
+            android:id="@+id/ib_isPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

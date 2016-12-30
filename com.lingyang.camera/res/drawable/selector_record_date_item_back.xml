@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:state_activated="true">
+
+    <item android:drawable="@drawable/shape_record_date_item_bg_sel" android:state_selected="true"></item>
+    <item android:drawable="@drawable/shape_record_date_item_bg_unsel" android:state_selected="false"></item>
+    <item android:drawable="@drawable/shape_record_date_item_bg_sel" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/shape_record_date_item_bg_sel" android:state_focused="true"></item>
+    <item android:drawable="@drawable/shape_record_date_item_bg_unsel"/>
+
+</selector>

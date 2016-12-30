@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_bg_gray"
+    android:orientation="vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:visibility="visible">
+
+    <View
+        android:id="@+id/camera_item_divider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@null" />
+
+    <RelativeLayout
+        android:id="@+id/rty_camera_null"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_card_ro"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_camera_null_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="您还没有添加自己的摄像机"
+            android:textColor="@color/common_text_color"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/tv_camera_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_camera_null_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:onClick="btn_add_bind_click"
+            android:text="添加个人摄像机"
+            android:textColor="#52bef8"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <!-- <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@null" /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_card_ro"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_pub_camera_operate_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="你还没有关注的摄像机"
+            android:textColor="@color/common_text_color"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/tv_pub_camera_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pub_camera_operate_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:text="去广场看看"
+            android:textColor="#ff6c00"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lingyang.camera.ui.activity.CalledActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:id="@+id/img_bg"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        >
+
+        <com.lingyang.camera.ui.widget.RoundImageView
+            android:id="@+id/rimg_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="152dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rimg_head"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mine_second_20sp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mine_second_18sp"
+            android:layout_marginTop="38dp"
+            />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="126dp"
+            android:layout_height="54dp"
+            android:background="@drawable/bg_called"
+            android:drawableLeft="@drawable/phone_turn_down"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:onClick="onCancel"
+            android:text="取消"
+            android:textColor="@color/red"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:drawablePadding="6dp"
+            android:layout_marginLeft="34dp"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/btn_answer"
+            android:layout_width="126dp"
+            android:layout_height="54dp"
+            android:background="@drawable/bg_called"
+            android:drawableLeft="@drawable/phone_anwser"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:onClick="onAnswer"
+            android:paddingRight="25dp"
+            android:text="接听"
+            android:drawablePadding="6dp"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="34dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

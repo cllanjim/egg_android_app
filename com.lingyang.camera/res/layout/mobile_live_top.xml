@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_prepare_mobile_live_header"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@android:color/transparent"
+    android:clickable="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:showIn="@layout/layout_prepare_mobile_live_param">
+
+    <TextView
+        android:id="@+id/tv_mobile_live_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_online_bg"
+        android:paddingBottom="3dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="6dp"
+        android:paddingTop="3dp"
+        android:text="@string/tv_prepare_mobile_live"
+        android:textColor="@color/text_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_mobile_live_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:text="00:00:00"
+        android:textColor="@color/text_white"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <ToggleButton
+        android:id="@+id/tb_use_flash_light"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_togglebutton_flash_light"
+        android:checked="false"
+        android:padding="6dp"
+        android:textOff=""
+        android:textOn="" />
+
+    <ImageView
+        android:id="@+id/iv_switch_fore_back_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:padding="6dp"
+        android:src="@drawable/icon_camera" />
+
+    <ImageView
+        android:id="@+id/iv_close_prepare_mobile_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:src="@drawable/button_close_live" />
+</LinearLayout>

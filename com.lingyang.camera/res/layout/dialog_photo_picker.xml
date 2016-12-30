@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"     android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="@string/pick_from_gallery"
+                  android:background="@drawable/selector_btn_bg_green"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:enabled="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+               android:text="@string/take_photo"
+                android:enabled="true"
+               android:background="@drawable/selector_btn_bg_green"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            
+              <TextView
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+               android:text="@string/cancel"
+                android:enabled="true"
+               android:background="@drawable/selector_click_effect"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    compile 'com.mikhaellopez:circularfillableloaders:1.2.0'
+    compile project(':com.lingyang.base')
+    compile project(':com.lingyang.sdk')
+    compile(name: 'pulltorefresh_library_release', ext: 'aar')
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.google.code.gson:gson:2.6.2'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+}
+
+android {
+    defaultConfig {
+        applicationId "com.lingyang.camera"
+        minSdkVersion 18
+        targetSdkVersion 19
+        versionCode 87
+        versionName "2.7.2_fix_2"
+
+        // dex突破65535的限制
+        multiDexEnabled true
+        // 默认是umeng的渠道
+        // manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+    }
+//    signingConfigs {
+//        debug {
+//            keyAlias 'androiddebugkey'
+//            keyPassword 'android'
+//            storeFile file('/key/debug.keystore')
+//            storePassword 'android'
+//        }
+//        release {
+//            keyAlias 'androiddebugkey'
+//            keyPassword 'android'
+//            storeFile file('/key/debug.keystore')
+//            storePassword 'android'
+//        }
+//    }
+
+    compileSdkVersion 21
+    buildToolsVersion '23.0.1'
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    buildTypes {
+        release {
+            // 不显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//            proguardFile 'proguard-project.txt'
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+            minifyEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            zipAlignEnabled true
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为topvdn_v1.0_2015-01-15_qudao.apk
+                        def fileName = "topvdn_v${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+        debug {
+//            signingConfig signingConfigs.debug
+            zipAlignEnabled true
+        }
+    }
+    // 移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+    productFlavors {
+        TopVdnSite {
+        }
+    }
+
+//    productFlavors.all {
+//        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//    }
+}

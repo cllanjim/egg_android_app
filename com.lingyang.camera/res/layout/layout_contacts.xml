@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_contact_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/call_history"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/button_close_live"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.lingyang.camera.ui.widget.CustomEditText
+            android:id="@+id/et_nickname_phonenumber"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="22dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_et_bg"
+            android:drawableRight="@drawable/button_delete"
+            android:gravity="left|center_vertical"
+            android:hint="@string/input_nickname_or_phonenumber"
+            android:maxLength="20"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_white"/>
+
+        <ImageButton
+            android:id="@+id/ib_call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/dial_key"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <com.lingyang.camera.ui.widget.CustomViewPager
+            android:id="@+id/vp_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="30"
+            android:focusable="false"/>
+       <!-- <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="22dp"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"/>-->
+
+        <ListView
+            android:id="@+id/lv_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="22dp"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/bg_gray"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|left">
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:text=""/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back" >
+
+    <include
+        android:id="@+id/title_bar_layout"
+        layout="@layout/common_header_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_share_to"
+            style="@style/CommonEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:hint="分享人的昵称"
+            android:inputType="text"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/btn_share_submmit"
+            style="@style/CommonButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:enabled="false"
+            android:text="分享" />
+    </LinearLayout>
+
+</RelativeLayout>

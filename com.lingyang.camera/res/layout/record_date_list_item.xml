@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_record_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_record_date_item_bg"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_record_date_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9月25日"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

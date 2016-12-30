@@ -1,0 +1,175 @@
+<FrameLayout android:id="@+id/f_rootview"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="270dp"
+             android:background="@color/white"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.lingyang.camera.ui.widget.MyHorizontalScrollView
+        android:id="@+id/hv_player_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:visibility="gone">
+    </com.lingyang.camera.ui.widget.MyHorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_player_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lingyang.sdk.player.widget.LYPlayer
+            android:id="@+id/vpv_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/iv_video_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:alpha="0.5"
+            android:scaleType="fitXY"/>
+
+        <include
+            layout="@layout/layout_live_mine_params"
+            />
+
+        <include
+            layout="@layout/layout_live_params"
+            />
+
+        <include
+            layout="@layout/layout_record"
+            />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_camera_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!--<ProgressBar
+            android:id="@+id/pb_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/ic_progress_default"
+            android:visibility="gone"/>-->
+        <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+            android:id="@+id/pb_bar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/antelope"
+
+            app:cfl_border="true"
+            app:cfl_border_width="0.5dp"
+            app:cfl_progress="78"
+            app:cfl_wave_amplitude="0.02"
+            app:cfl_wave_color="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/img_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/replay"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_camera_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_play_param"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|left"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_play_param"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:src="@drawable/msg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_vision_seek"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="6dp">
+
+        <SeekBar
+            android:id="@+id/seekbarview"
+            android:layout_width="68dp"
+            android:layout_height="7dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/line_horizental"
+            android:max="100"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:progressDrawable="@null"
+            android:thumb="@drawable/shape_seekbar_thumb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekbarview"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="0"
+            android:textColor="@color/text_white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/seekbarview"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:text="100"
+            android:textColor="@color/text_white"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_live_recordtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_recordtime_bg"
+        android:drawableLeft="@drawable/round_red"
+        android:drawablePadding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="正在本地录像 01:02:36"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+
+</FrameLayout>

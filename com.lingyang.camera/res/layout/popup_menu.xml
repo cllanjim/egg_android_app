@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="160dp"
+              android:layout_height="120dp"
+              android:background="@drawable/shape_prepare_mobile_live_param_pop"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_add_camera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/menu_add_camera_sel"
+        android:textColor="@color/text_dark"
+        android:textSize="14sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/text_gray_light"
+        />
+
+    <TextView
+        android:id="@+id/tv_go_to_public"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/menu_go_to_public"
+        android:textColor="@color/text_dark"
+        android:textSize="14sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/text_gray_light"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_mobile_live"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:text="@string/menu_mobile_live"
+        android:textColor="@color/text_dark"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+</LinearLayout>

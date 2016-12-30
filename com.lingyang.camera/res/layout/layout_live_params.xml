@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_live_params"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/half_transparent_shadow_top"
+        android:gravity="center_vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_player_backfrom_fullscreen"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/next_icon"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/iv_heder_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_button_back_black"
+            android:onClick="onClick_Back"/>
+
+        <TextView
+            android:id="@+id/tv_live_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/mine_second_20sp"/>
+
+        <Button
+            android:id="@+id/btn_copy_play_address"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selector_btn_orange_circle"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/copy_play_address"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/mine_second_14sp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/half_transparent_shadow_bottom">
+
+        <TextView
+            android:id="@+id/tv_live_today"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <ToggleButton
+                android:id="@+id/tb_live_public_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/selector_togglebutton_volume"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_white"
+                android:textOff="@string/vol_off"
+                android:textOn="@string/vol_on"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"/>
+
+        <TextView
+            android:id="@+id/tv_live_watched_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="1243"
+            android:textColor="@color/text_white"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"/>
+
+
+        <CheckBox
+            android:id="@+id/tb_attention"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:button="@color/transparent"
+            android:drawableLeft="@drawable/selector_togglebutton_attention"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/text_white"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_mobile_live"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp">
+
+        <Button
+            android:id="@+id/btn_mobile_live_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:background="@drawable/selector_mobile_btn_snapshot" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mobile_live_params"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_mobile_live_params"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/msg" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.lingyang.camera.ui.activity.MobilePlayerActivity"
+        >
+
+        <com.lingyang.sdk.player.widget.LYPlayer
+            android:id="@+id/layout_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+            android:id="@+id/iv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="18dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/msg"/>
+
+        <LinearLayout
+            android:id="@+id/layout_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+           <!-- <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />-->
+            <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+                android:id="@+id/progressbar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/antelope"
+
+                app:cfl_border="true"
+                app:cfl_border_width="0.5dp"
+                app:cfl_progress="78"
+                app:cfl_wave_amplitude="0.02"
+                app:cfl_wave_color="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/connect_client_ing"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_copy_hls_address"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/selector_btn_orange_circle"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/copy_play_address"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/mine_second_14sp"/>
+
+
+        <Button
+            android:id="@+id/btn_snapshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/selector_mobile_btn_snapshot"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_mobile_cover"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/rl_above"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mobile_live_back"/>
+
+        <TextView
+            android:id="@+id/tv_liveover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="直播已结束"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone"
+            />
+
+        <CheckBox
+            android:id="@+id/tb_mobile_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:button="@color/transparent"
+            android:drawableLeft="@drawable/selector_togglebutton_attention"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/text_white"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</FrameLayout>

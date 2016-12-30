@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_bg_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top"
+            layout="@layout/common_header_bar" />
+
+        <RelativeLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="23dp"
+            android:background="@color/white"
+            android:paddingLeft="23dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="摄像机名称"
+                android:textColor="@color/text_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:text=""
+                android:textColor="@color/text_dark"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:src="@drawable/ic_link" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_definition"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:paddingLeft="23dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/set_definition"
+                android:textColor="@color/text_dark"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/ib"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:src="@drawable/ic_link" />
+
+            <TextView
+                android:id="@+id/tv_definition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/ib"
+                android:text="高清"
+                android:textColor="@color/text_dark"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_gray" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:paddingLeft="23dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/set_mic"
+                android:textColor="@color/text_dark"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/box_mic"
+                style="@style/CommonCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/ic_link" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_gray" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:paddingLeft="23dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/set_cloud_save"
+                android:textColor="@color/text_dark"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/box_cloud"
+                style="@style/CommonCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/ic_link" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/white"
+            android:paddingLeft="23dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/set_public"
+                android:textColor="@color/text_dark"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/box_public"
+                style="@style/CommonCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/ic_link" />
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tv_relieve"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="35dp"
+            android:background="@drawable/shape_exit_btn_bg"
+            android:gravity="center"
+            android:text="@string/set_relieve_bind"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--   <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/progressbar"
+          android:visibility="gone"
+          /> -->
+
+</RelativeLayout>

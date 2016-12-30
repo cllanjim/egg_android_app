@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    >
+
+    <TextView
+        android:id="@+id/wifi_ssid"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="17dp"
+        android:layout_toLeftOf="@+id/wifi_signal"
+        android:gravity="center_vertical"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textColor="@color/dialog_msg_tv"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/wifi_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@null"
+        />
+
+</RelativeLayout>

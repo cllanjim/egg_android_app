@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+     >
+
+   <include 
+       layout="@layout/common_header_bar"
+       android:id="@+id/top"
+       />
+
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="38dp"
+       >
+   <com.lingyang.camera.ui.widget.RoundImageView 
+       android:id="@+id/head"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:scaleType="centerCrop"
+       android:src="@drawable/bg_head"
+       android:layout_gravity="center_horizontal"
+       />
+   
+   <EditText 
+       android:id="@+id/name"
+       android:layout_width="166dp"
+       android:layout_height="38dp"
+       android:textColor="@color/text_dark"
+       android:textSize="16sp"
+       android:background="@null"
+       android:gravity="center"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="16dp"
+       android:hint="@string/input_nickname"
+       android:maxLength="16"
+       />
+   <View 
+       android:layout_width="166dp"
+       android:layout_height="1px"
+       android:background="@color/bg_gray"
+       android:layout_gravity="center_horizontal"
+       />
+   
+   <Button 
+       android:id="@+id/commit"
+       style="@style/CommonButtonStyle"
+       android:layout_width="match_parent"
+       android:layout_height="46dp"
+       android:layout_marginLeft="35dp"
+       android:layout_marginRight="35dp"
+       android:layout_marginTop="44dp"
+       android:text="@string/complete"
+       />
+   </LinearLayout>
+</LinearLayout>

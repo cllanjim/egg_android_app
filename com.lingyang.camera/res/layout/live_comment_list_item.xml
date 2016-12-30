@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="2dp" >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_user_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/tv_live_comment_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="4月"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_live_comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="11"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_live_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="2"
+            android:text="我家后院漂亮的顶顶顶顶顶顶顶顶顶顶家后院顶顶顶顶顶顶顶顶顶顶是水水水水"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

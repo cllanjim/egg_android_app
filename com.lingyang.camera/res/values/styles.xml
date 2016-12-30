@@ -1,0 +1,206 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:style/Theme.NoTitleBar"/>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- <item name="android:textColor">@color/common_text_color</item> -->
+
+    </style>
+
+    <style name="AppTopCommonLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">51dp</item>
+        <item name="android:background">@drawable/bg_top</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="CommonButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/selector_btn_bg_green</item>
+    </style>
+
+    <style name="CommonCommandImageButtonStyle">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="ExitButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_exit_btn_bg</item>
+    </style>
+
+    <style name="UnenableButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:background">@drawable/shape_btn_bg_not_enable</item>
+    </style>
+
+
+    <style name="CommonEditTextStyle">
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <style name="CommonTextViewStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="CommonCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:button">@drawable/checkbox_style</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="LoginCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:button">@drawable/login_checkbox_style</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+
+    <style name="HaveDrawableEditTextStyle">
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+    <style name="HaveDrawableEditTextOfRegistStyle">
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="ListViewStyle">
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@null</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:listSelector">#00000000</item>
+    </style>
+
+    <style name="btn_red_large">
+        <item name="android:background">@drawable/btn_red_large</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="list_style">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+
+    <style name="AnimationDialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="RightGoImageButtonStyle">
+        <item name="android:background">@null</item>
+        <item name="android:src">@drawable/ic_link</item>
+
+    </style>
+
+    <style name="PrepareMobileLiveRLStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingLeft">18dp</item>
+    </style>
+
+    <style name="PrepareMobileLiveTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="PrepareMobileLiveToggleArrowStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/selector_togglebutton_arrow</item>
+        <item name="android:textOff"></item>
+        <item name="android:textOn"></item>
+    </style>
+
+    <style name="PrepareMobileLiveToggleSwitchStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textOff"></item>
+        <item name="android:textOn"></item>
+    </style>
+
+    <style name="PrepareMobileLiveRateValueStyle">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <!-- 设置窗口背景，透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 表示当前对话框弹出后，他后面视图(一般指Activity的视图)的透明度  0 ：完全透明    1:完全不透明，黑色 -->
+        <item name="android:backgroundDimAmount">0.1</item>
+    </style>
+
+    <style name="StyleProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
+    <item name="android:maxHeight">50dip</item>
+<item name="android:minHeight">10dip</item>
+<item name="android:indeterminateOnly">false</item>
+<item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+<item name="android:progressDrawable">@drawable/shape_progressbar_mini</item>
+    </style>
+
+    <style name="popup_param_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+    <style name="popup_mobile_live_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popup_show_bottom</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide_bottom</item>
+    </style>
+
+    <!--<style name="HomeTabPageIndicator">-->
+    <!--<item name="android:gravity">center</item>-->
+    <!--&lt;!&ndash;<item name="android:background">@drawable/my__tab_indicator</item>&ndash;&gt;-->
+    <!--<item name="android:paddingLeft">22dip</item>-->
+    <!--<item name="android:paddingRight">22dip</item>-->
+    <!--<item name="android:paddingTop">12dp</item>-->
+    <!--<item name="android:paddingBottom">12dp</item>-->
+    <!--<item name="android:textAppearance">@style/myTextAppearance</item>-->
+    <!--<item name="android:textSize">20sp</item>-->
+    <!--<item name="android:maxLines">1</item>-->
+    <!--</style>-->
+
+    <!--<style name="myTextAppearance" parent="Widget">-->
+    <!--<item name="android:textStyle">bold</item>-->
+    <!--<item name="android:textColor">@color/white</item>-->
+    <!--</style>-->
+</resources>

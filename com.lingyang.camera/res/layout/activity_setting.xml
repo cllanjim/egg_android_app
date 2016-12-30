@@ -1,0 +1,281 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar_layout"
+        layout="@layout/common_header_bar" />
+
+    <include layout="@layout/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icon_camera_statuslight"
+                android:text="@string/camera_set_public"
+                android:textSize="20sp" />
+
+            <ToggleButton
+                android:id="@+id/tb_setting_public"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_togglebutton_setting"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <include layout="@layout/horizontal_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_public_region_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="@string/camera_set_public_region_type"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_public_region_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="公众直播范围"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_region_small"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="当地"
+                    android:textColor="@color/common_text_color" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_region_big"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="全国"
+                    android:textColor="@color/common_text_color" >
+                </RadioButton>
+            </RadioGroup>
+
+            <include layout="@layout/horizontal_line" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icon_camera_statuslight"
+                android:text="@string/camera_set_cloud_record"
+                android:textSize="20sp" />
+
+            <ToggleButton
+                android:id="@+id/tb_setting_record"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_togglebutton_setting"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <include layout="@layout/horizontal_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="@string/camera_set_region"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_region"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="区域"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_SZ"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="深圳"
+                    android:textColor="@color/common_text_color" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_HZ"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="杭州"
+                    android:textColor="@color/common_text_color" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_BJ"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="北京"
+                    android:textColor="@color/common_text_color" >
+                </RadioButton>
+            </RadioGroup>
+
+            <include layout="@layout/horizontal_line" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icon_camera_mic"
+                android:text="@string/camera_set_mic"
+                android:textSize="20sp" />
+
+            <ToggleButton
+                android:id="@+id/tb_setting_mic"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_togglebutton_setting"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <include layout="@layout/horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="@string/camera_set_rate"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_high"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="高清"
+                    android:textColor="@color/common_text_color" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_middle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="标清"
+                    android:textColor="@color/common_text_color" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_low"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="流畅"
+                    android:textColor="@color/common_text_color" >
+                </RadioButton>
+            </RadioGroup>
+
+            <include layout="@layout/horizontal_line" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_setting_save"
+            style="@style/CommonButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:enabled="false"
+            android:onClick="setting_save"
+            android:text="保存设置" />
+
+        <Button
+            style="@style/CommonButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:onClick="setting_unbind"
+            android:text="解除绑定" />
+
+        <include layout="@layout/horizontal_line" />
+    </LinearLayout>
+
+</LinearLayout>

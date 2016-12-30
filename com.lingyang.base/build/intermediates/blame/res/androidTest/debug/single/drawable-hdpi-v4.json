@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ic_progress_default.png",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/drawable-hdpi-v4/ic_progress_default.png"
+    },
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/vpi__tab_selected_focused_holo.9.png",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/drawable-hdpi-v4/vpi__tab_selected_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/vpi__tab_unselected_pressed_holo.9.png",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/drawable-hdpi-v4/vpi__tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/vpi__tab_selected_pressed_holo.9.png",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/drawable-hdpi-v4/vpi__tab_selected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/vpi__tab_unselected_holo.9.png",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/drawable-hdpi-v4/vpi__tab_unselected_holo.9.png"
+    },
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/vpi__tab_unselected_focused_holo.9.png",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/drawable-hdpi-v4/vpi__tab_unselected_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/vpi__tab_selected_holo.9.png",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/drawable-hdpi-v4/vpi__tab_selected_holo.9.png"
+    }
+]

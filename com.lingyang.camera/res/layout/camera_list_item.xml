@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/public_camera_thumb_rl"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp">
+
+        <ImageView
+            android:id="@+id/iv_camera_capture"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+        <!-- <FrameLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content"> -->
+
+
+        <!--  -->
+
+
+        <!-- <view -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="184dp" -->
+        <!-- android:background="@drawable/shape_camera_pic_bg" /> -->
+        <!-- </FrameLayout> -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_circle_gray">
+
+            <com.lingyang.camera.ui.widget.RoundImageView
+                android:id="@+id/iv_camera_user_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_camera_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/iv_camera_user_icon"
+                android:text="办公室"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_camera_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_camera_nickname"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/iv_camera_user_icon"
+                android:text="x我的"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_camera_isonline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_online_bg"
+            android:drawableLeft="@drawable/online_camera"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:text="在线"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mycamera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/public_camera_thumb_rl"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/bg_ro"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/layout_share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_record"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/button_time"
+                android:gravity="center"
+                android:paddingLeft="60dp"
+                android:paddingRight="50dp"
+                android:text="@string/record"
+                android:textColor="@color/text_dark"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/line"
+                />
+
+            <TextView
+                android:id="@+id/tv_cancel_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/small_close"
+                android:gravity="center"
+                android:paddingLeft="60dp"
+                android:paddingRight="50dp"
+                android:text="@string/delete_share"
+                android:textColor="@color/text_dark"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iv_camera_to_share"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/button_share"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/text_dark"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/iv_camera_to_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/icon_people"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/text_dark"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_camera_shareuser_count"
+            style="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_dark"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_camera_place"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/icon_location"
+            android:drawablePadding="6dp"
+            android:ellipsize="marquee"
+            android:gravity="left|center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="180dp"
+            android:minWidth="120dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="地点"
+            android:textColor="@color/text_dark"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tb_camera_unattention"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/small_close"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:src="@color/transparent"
+            android:text="取消关注"
+            android:textColor="@color/text_dark"
+            android:textSize="13sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/iv_camera_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/button_set"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:text="摄像机设置"
+            android:textColor="@color/text_dark"
+            android:textSize="12sp"
+            />
+
+        <ImageButton
+            android:id="@+id/iv_camera_attention"
+            style="@style/CommonCommandImageButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/button_attention"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/iv_camera_history"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/button_time"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/record"
+            android:textColor="@color/text_dark"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_camera_history"
+            android:src="@drawable/line"
+            />
+
+        <ImageView
+            android:id="@+id/iv_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/iv_camera_history"
+            android:src="@drawable/line"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

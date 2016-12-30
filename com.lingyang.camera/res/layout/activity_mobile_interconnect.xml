@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_local"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <com.lingyang.sdk.view.LYGLCameraEncoderView
+            android:id="@+id/ly_encoder_view"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp" />
+
+        <com.lingyang.sdk.player.widget.LYPlayer
+            android:id="@+id/ly_mobile_interconnect_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_mobile_interconnect" />
+
+</FrameLayout>

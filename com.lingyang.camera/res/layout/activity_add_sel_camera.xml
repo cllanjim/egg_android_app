@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/bg_add">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/rootview"
+            layout="@layout/common_header_bar" />
+
+        <FrameLayout
+            android:id="@+id/wifi_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#44000000"
+            android:clickable="false"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_add_wifi_list"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/title_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58.3dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/add_camera"
+                        android:textColor="#e63b53"
+                        android:textSize="19.3dp" />
+
+                    <ImageView
+                        android:id="@+id/img_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_wifi_refresh"
+                        android:contentDescription="@null" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/sp_line_color" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/mEmptyView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <!--<ProgressBar
+                            android:id="@+id/pb_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />-->
+                        <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+                            android:id="@+id/pb_bar"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/antelope"
+
+                            app:cfl_border="true"
+                            app:cfl_border_width="0.5dp"
+                            app:cfl_progress="78"
+                            app:cfl_wave_amplitude="0.02"
+                            app:cfl_wave_color="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_wifi_ap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="@string/camera_setting_no_camera_ap"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/lv_wifi_list"
+                        style="@style/list_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@drawable/dot_list_divider"
+                        android:dividerHeight="0.5dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/sp_line_color" />
+
+                <Button
+                    style="@style/CommonButtonStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:onClick="connectAP"
+                    android:text="@string/add_camera_sel" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/item_add_success"
+        layout="@layout/item_add_success"
+        android:visibility="gone" />
+
+</RelativeLayout>

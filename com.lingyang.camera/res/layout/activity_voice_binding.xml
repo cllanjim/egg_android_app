@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        style="@style/AppTopCommonLayout">
+
+        <ImageView
+            android:id="@+id/iv_voice_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="center"
+            android:src="@drawable/selector_button_back"/>
+
+        <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/text_dark"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/voice_binding_tip"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/img_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/iphone_sound_wave"
+        />
+
+    <FrameLayout
+        android:id="@+id/layout_voice_animation"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_below="@+id/img_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp">
+
+        <ImageView
+            android:id="@+id/iv_send_back"
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center"
+            android:src="@drawable/circle_ic"/>
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center"
+            android:background="@drawable/loading_ic"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_send"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/voice_binding_send"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <com.lingyang.camera.ui.widget.WaveformView
+                android:id="@+id/wv_wave"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_progressbar"
+        style="@style/StyleProgressBarMini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape_progressbar_bg"
+        android:max="100"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:text="@string/voice_binding_countdown"
+        android:textColor="@color/text_dark"
+        android:textSize="14sp"
+        />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/CommonButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:enabled="false"
+        android:text="@string/next_step"
+        android:visibility="gone"/>
+</RelativeLayout>

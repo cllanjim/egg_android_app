@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange">#ff841d</color>
+    <color name="yellow_page_search_bg">#fffffbfa</color>
+    <color name="black">#ff000000</color>
+    <color name="home_header_back">#1fa4c7</color>
+    <color name="login_form_hint">#ffb5b5b5</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#99000000</color>
+    <color name="half_transparent_white">#aaffffff</color>
+    <color name="half_transparent_dark">#88000000</color>
+
+    <color name="yellow_light">#ffefa717</color>
+    <color name="white">#ffffffff</color>
+    <color name="app_back">#eff1ee</color>
+    <color name="tabview_light">#FF787878</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_dark">#FF333333</color>
+    <color name="text_gray_light">#FF666666</color>
+    <color name="text_gray">#FF787878</color>
+    <color name="main_tile">#70ae51</color>
+   <!--  <color name="header_back">#3a3b3a</color> -->
+    <color name="header_back">#1fa4c7</color>
+    <color name="status_back">#883a3b3a</color>
+    <color name="main_tile_normal">#3a3b3a</color>
+    <color name="button_back_normal">#248c12</color>
+    <color name="common_text_color">#8a8a8a</color>
+    <color name="date_textColor_selected">#52bef8</color>
+    <color name="date_textColor_unselected">#999999</color>
+    <color name="record_date_hour_item_textcolor_unselected">#7e7e7e</color>
+    <color name="record_date_hour_item_textcolor_selected">#ffffff</color>
+    <color name="text_hint">#FFB9B9B9</color>
+    <color name="k_common_text_pressed">#333333</color>
+    <color name="sp_line_color">#d3d3d3</color>
+    <color name="dialog_msg_tv">#434343</color>
+    <color name="state_offLine_color">#969694</color>
+    <color name="guide_green">#FF88CF36</color>
+    <color name="red">#FFff0000</color>
+    <color name="blue">#FF00baff</color>
+    <color name="bg_gray">#cccccc</color>
+    <color name="line">#999999</color>
+    <color name="mine_bg_gray">#f0f0f0</color>
+    <color name="mine_myfile_selected">#ff6c00</color>
+    <color name="green">#42bd41</color>
+    <color name="send_voice_end">#2BC2FF</color>
+    <color name="half_transparent_white_light">#66ffffff</color>
+    <color name="orange_dark">#a15515</color>
+
+</resources>

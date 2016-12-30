@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/common_header_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/camear_small"
+            android:drawablePadding="36dp"
+            android:hint="@string/cemera_name"
+            android:maxLength="16"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <!--  <CheckBox 
+                 android:id="@+id/checkbox_topublic"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:checked="false"
+                 /> -->
+
+            <CheckBox
+                android:id="@+id/checkbox_topublic"
+                style="@style/LoginCheckBoxStyle"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:checked="false" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/camera_set_public"
+                android:textColor="@color/text_dark"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_btn_bg_green"
+        android:text="@string/complete"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

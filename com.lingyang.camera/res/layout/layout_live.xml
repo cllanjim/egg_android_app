@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_layout_live"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+    <ToggleButton
+        android:id="@+id/tb_live_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/tb_live_mediarecord"
+        android:background="@drawable/selector_togglebutton_mediarecord"
+        android:textOff=""
+        android:textOn=""/>
+
+    <Button
+        android:id="@+id/tb_live_mediarecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector_togglebutton_audiorecord"/>
+
+    <Button
+        android:id="@+id/btn_live_snapshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tb_live_mediarecord"
+        android:background="@drawable/selector_btn_snapshot"/>
+
+</RelativeLayout>

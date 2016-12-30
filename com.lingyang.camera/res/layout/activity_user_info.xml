@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_bg_gray"
+    android:orientation="vertical"
+    >
+
+    <include 
+        layout="@layout/common_header_bar"
+        android:id="@+id/top"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_head"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/mine_second_14sp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/img"
+            style="@style/RightGoImageButtonStyle"
+            android:contentDescription="@string/app_name"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:scaleType="center"
+            />
+        
+        <com.lingyang.camera.ui.widget.RoundImageView 
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:id="@+id/img_head"
+            android:src="@drawable/photo"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img"
+            android:layout_marginRight="13dp"
+            />
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_gray"
+        />
+      <RelativeLayout 
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_name"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/mine_second_14sp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            />
+        
+        <ImageView
+            android:id="@+id/img2"
+            android:contentDescription="@string/app_name"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+           style="@style/RightGoImageButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:layout_marginRight="13dp"
+            />
+        
+       <TextView 
+           android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fsdgdg"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/mine_second_14sp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+           android:layout_toLeftOf="@+id/img2"
+            android:layout_marginRight="13dp"
+            />
+    </RelativeLayout>
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_gray"
+        />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_phone"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/mine_second_14sp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            />
+        
+        
+       <TextView 
+           android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fsdgdg"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/mine_second_14sp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

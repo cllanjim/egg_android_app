@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_transparent">
+
+    <LinearLayout
+        android:id="@+id/ll_center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_shareuser_item_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_shareto_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_dark"
+                android:text="已分享给4位家人和朋友"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_share_pop_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:gravity="center_vertical"
+                android:focusable="true" 
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_share_nickname"
+                    style="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="输入昵称"
+                    android:lines="1"
+                    android:paddingLeft="16dp"
+                    android:text=""
+                    android:maxLength="20"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_shareto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/selector_btn_share" />
+            </LinearLayout>
+
+            <include layout="@layout/horizontal_line"></include>
+
+            <ListView
+                android:id="@+id/list_shareuser"
+                style="@style/ListViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:dividerHeight="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

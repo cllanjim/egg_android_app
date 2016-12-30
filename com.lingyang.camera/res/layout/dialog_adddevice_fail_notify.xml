@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="266dp"
+    android:layout_height="240dp"
+    android:background="@drawable/shape_btn_empty"  
+      android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical"  
+         
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/add_third_fail_notify"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp"
+            android:layout_marginTop="28dp"
+            android:paddingLeft="33dp"
+         android:paddingRight="33dp"
+            />
+        
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/add_third_fail_notify_msg"
+            android:textColor="@color/text_dark"
+            android:textSize="12sp"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="33dp"
+         android:paddingRight="33dp"
+            />
+        
+        <TextView 
+            android:id="@+id/addagain"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/add_third_fail_notify_again"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:background="@drawable/shape_addfail_bg"
+            android:layout_marginLeft="33dp"
+         android:layout_marginRight="33dp"
+            />
+        
+         
+      <TextView 
+            android:id="@+id/gomain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/add_third_fail_notify_gomain"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:background="@drawable/shape_addfail_gray_bg"
+            />
+      </LinearLayout>
+    
+
+</RelativeLayout>

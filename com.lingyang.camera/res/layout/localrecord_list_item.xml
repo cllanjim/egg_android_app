@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_header"
+        >
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015/08/06"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         />
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_calendar"
+        android:layout_below="@+id/tv_date"
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:orientation="horizontal"
+        >
+<ImageView 
+    android:layout_width="15dp"
+    android:layout_height="match_parent"
+    android:src="@drawable/time_shaft"
+    android:layout_marginLeft="10dp"
+    android:scaleType="centerCrop"
+    android:id="@+id/shaft"
+    />
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="178dp"
+    android:paddingRight="10dp"
+    >
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="4dp"
+       >
+        <ImageView
+            android:id="@+id/iv_capture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+			android:scaleType="fitXY"
+			android:layout_marginLeft="10dp"
+            android:src="@drawable/camera_default_icon_bg" />
+        <ImageButton 
+            android:id="@+id/ib_start"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/button_start"
+            android:background="@null"
+            />
+        
+        <ImageButton 
+            android:id="@+id/ib_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/button_ic_delete"
+            android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+        <TextView 
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bg_time"
+            android:text="234324"
+            android:gravity="center"
+            />
+        
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_bg_gray"
+    android:orientation="vertical"
+    >
+    
+    <include 
+        layout="@layout/common_header_bar"
+        android:id="@+id/top"
+        />
+
+    <RelativeLayout 
+        android:id="@+id/layout_hd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_definition_hd"
+            android:textColor="@color/text_dark"
+            android:textSize="13sp"
+            android:layout_marginLeft="23dp"
+            android:layout_centerVertical="true"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_hd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_check"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_gray"
+        />
+     <RelativeLayout 
+        android:id="@+id/layout_sd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_definition_sd"
+            android:textColor="@color/text_dark"
+            android:textSize="13sp"
+            android:layout_marginLeft="23dp"
+            android:layout_centerVertical="true"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_sd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_check"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:scaleType="center"
+            />
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_gray"
+        />
+     <RelativeLayout 
+        android:id="@+id/layout_fluent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_definition_fluent"
+            android:textColor="@color/text_dark"
+            android:textSize="13sp"
+            android:layout_marginLeft="23dp"
+            android:layout_centerVertical="true"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_fluent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_check"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    
+</LinearLayout>

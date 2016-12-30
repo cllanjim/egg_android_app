@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+
+    <include 
+        layout="@layout/common_header_bar"
+        android:id="@+id/top"
+        />
+    
+    <ImageView 
+        android:id="@+id/imgnull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:src="@drawable/bg_attention"
+        android:visibility="gone"
+        />
+
+    
+   <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refreshlv"
+        style="@style/ListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrHeaderBackground="@android:color/darker_gray"
+        ptr:ptrMode="pullDownFromTop" />
+        
+</LinearLayout>

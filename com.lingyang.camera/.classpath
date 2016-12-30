@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry excluding="com/lingyang/camera/ui/widget/listview/|com/lingyang/camera/ui/widget/listview/extras/|com/lingyang/camera/ui/widget/listview/extras/SoundPullEventListener.java|com/lingyang/camera/ui/widget/listview/internal/|com/lingyang/camera/ui/widget/listview/internal/EmptyViewMethodAccessor.java|com/lingyang/camera/ui/widget/listview/internal/FlipLoadingLayout.java|com/lingyang/camera/ui/widget/listview/internal/IndicatorLayout.java|com/lingyang/camera/ui/widget/listview/internal/LoadingLayout.java|com/lingyang/camera/ui/widget/listview/internal/RotateLoadingLayout.java|com/lingyang/camera/ui/widget/listview/internal/Utils.java|com/lingyang/camera/ui/widget/listview/internal/ViewCompat.java|com/lingyang/camera/ui/widget/listview/ILoadingLayout.java|com/lingyang/camera/ui/widget/listview/IPullToRefresh.java|com/lingyang/camera/ui/widget/listview/LoadingLayoutProxy.java|com/lingyang/camera/ui/widget/listview/OverscrollHelper.java|com/lingyang/camera/ui/widget/listview/PullToRefreshAdapterViewBase.java|com/lingyang/camera/ui/widget/listview/PullToRefreshBase.java|com/lingyang/camera/ui/widget/listview/PullToRefreshListView.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

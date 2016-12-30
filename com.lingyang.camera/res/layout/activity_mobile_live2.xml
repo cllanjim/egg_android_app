@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lingyang.sdk.view.LYGLCameraEncoderView
+            android:id="@+id/ly_encoder_view"
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+            />
+    </LinearLayout>-->
+
+    <include layout="@layout/layout_mobile_live_param" />
+
+</FrameLayout>

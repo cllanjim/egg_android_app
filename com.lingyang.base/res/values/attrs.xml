@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="slideMenuStyle" format="reference" />
+
+    <declare-styleable name="SlideMenu_Layout">
+        <attr name="layout_role" format="enum">
+            <enum name="content" value="0" />
+            <enum name="primaryMenu" value="1" />
+            <enum name="secondaryMenu" value="2" />
+        </attr>
+    </declare-styleable>
+    
+  <!--  <declare-styleable name="SlideMenu">
+        <attr name="primaryShadowWidth" format="dimension" />
+        <attr name="secondaryShadowWidth" format="dimension" />
+        <attr name="primaryShadowDrawable" format="reference" />
+        <attr name="secondaryShadowDrawable" format="reference" />
+        <attr name="isCanScrollMenu" format="boolean" />
+        <attr name="isShowShadow" format="boolean" />
+        <attr name="primaryMenuMoveScale" format="float" />
+        <attr name="edgeSlide" format="boolean" />
+        <attr name="edgeSlideWidth" format="dimension" />
+        <attr name="maxDuration" format="integer" />
+        <attr name="handleKeyback" format="boolean" />
+        <attr name="slideDirection" format="flags">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+        <attr name="interpolator" format="reference" />
+    </declare-styleable>-->
+    
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsMaxIndicatorTabWidthRate" format="float" /> 
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="android:textColor" />
+    </declare-styleable>
+    
+</resources>

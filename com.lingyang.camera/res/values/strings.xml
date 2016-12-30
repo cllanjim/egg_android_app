@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">羚羊视频云</string>
+    <string name="app_reg">注册</string>
+    <string name="app_share">共享</string>
+    <string name="app_bind">第三步 绑定摄像头</string>
+    <string name="cloud_login_fail">云平台登录失败</string>
+    <string name="cloud_login_fail_and_exit">云平台登录失败,即将退出程序</string>
+    <!-- login -->
+    <string name="app_login">登录</string>
+    <string name="app_findpassword">找回密码?</string>
+    <string name="app_reset_password">忘记密码？</string>
+    <string name="app_login_input_phone">请输入手机号码</string>
+    <string name="app_login_input_identify">请输入验证码</string>
+    <string name="app_login_input_email">请输入邮箱</string>
+    <string name="app_login_input_pwd">请输入密码</string>
+    <string name="app_login_pwd_notify">密码是长度为6~13位的数字，字母和下划线</string>
+    <string name="app_login_get_identify">获取验证码</string>
+    <string name="app_login_Reacquire">重新获取</string>
+    <string name="login_bind_registed_email">绑定已注册邮箱</string>
+    <string name="login_error_phone">你输入的手机号码格式不正确</string>
+    <string name="login_identity_was_send">验证码已发送至手机</string>
+    <string name="login_identity_send_fail">验证码发送失败</string>
+    <string name="app_me">我</string>
+    <string name="app_setting">摄像机设置</string>
+    <string name="app_login_error">登录失败</string>
+    <string name="app_login_waiting">正在登陆请稍后。。。</string>
+    <string name="app_login_notbenull">用户名密码不能为空！</string>
+    <string name="app_findpassword_success">已发送密码邮件到你的邮箱，快快去查看吧！</string>
+    <string name="app_reactivate_success">已发送激活邮件到你的邮箱，快快去查看吧！</string>
+    <string name="app_findpassword_error_email_notexist">你输入的邮箱地址不存在</string>
+    <string name="app_reg_suceess">注册成功,请登录你的注册邮箱做激活验证！</string>
+    <string name="app_share_success">分享成功</string>
+    <string name="app_share_error_notbenull">分享用户不能为空</string>
+    <string name="app_share_error">分享失败</string>
+    <string name="app_reg_notbenull">用户名昵称密码不能为空！</string>
+    <string name="my_attention">我的关注</string>
+    <string name="attention">关注</string>
+    <string name="unattention">取消关注</string>
+    <string name="attention_mine">我的摄像机</string>
+    <string name="discovery">发现</string>
+    <string name="mine_record">我的</string>
+    <string name="action_settings">Settings</string>
+    <string name="waiting">请稍候…</string>
+    <string name="req_exception">任务请求异常</string>
+    <string name="camera_state_online">在线</string>
+    <string name="camera_state_offline">离线</string>
+    <string name="date_today">今天</string>
+    <string name="date_lastday">昨天</string>
+    <string name="date_am">上午</string>
+    <string name="date_pm">下午</string>
+    <string name="livecamera_state_offline">离线状态</string>
+    <string name="livecamera_state_ready">就绪状态</string>
+    <string name="livecamera_state_prepare">准备状态</string>
+    <string name="livecamera_state_connecting">正在连接中</string>
+    <string name="livecamera_state_relay">正在请求转发</string>
+    <string name="livecamera_state_living">正在直播</string>
+    <string name="livecamera_state_stoping">断开连接中 </string>
+    <string name="livecamera_state_error">网络不稳定，摄像机断开连接请重试</string>
+    <string name="livecamera_begin_speak">开始对讲</string>
+    <string name="livecamera_end_speak">结束对讲</string>
+    <string name="camera_set_public">设为公众摄像机</string>
+    <string name="camera_cancel_public">取消公众摄像机</string>
+    <string name="camera_confirm_unbind">确定要取消绑定该摄像机吗？</string>
+    <string name="camera_confirm_upgrade">发现新版本</string>
+    <string name="camera_confirm_forceupgrade">需要升级版本才能继续使用</string>
+    <string name="camera_view_record">历史回放</string>
+    <string name="camera_set_status_light">摄像机状态灯</string>
+    <string name="camera_set_mic">摄像机麦克风</string>
+    <string name="camera_set_rate">摄像机码流清晰度</string>
+    <string name="camera_set_region">请选择离放置摄像机最近的城市</string>
+    <string name="camera_set_public_region_type">请选择支持公众直播范围</string>
+    <string name="camera_set_mic_volume">内置麦克风音量</string>
+    <string name="camera_set_screen_origien">摄像机画面</string>
+    <string name="camera_set_cloud_record">摄像机开启云存储</string>
+    <string name="menu_ratio">画面比例</string>
+    <string name="menu_list">播放列表</string>
+    <string name="mc_exit">退出播放</string>
+    <string name="confirm_wifi_password">请选择摄像机要连接的WiFi</string>
+    <string name="wifi_ssid_hint">点击这里选择WiFi</string>
+    <string name="wifi_name_hint">请输入WiFi名称</string>
+    <string name="wifi_password_hint">请输入WiFi密码</string>
+    <string name="wifi_confirm_password_hint">请再次输入WiFi密码</string>
+    <string name="wifi_password_less_than_eight">WiFi密码至少需要8位</string>
+    <string name="wifi_password_less_than_five">WiFi密码至少需要8位</string>
+    <string name="add_camera_cancel">是否取消添加摄像机？</string>
+    <string name="continue_wait">继续等待</string>
+    <string name="error_response_Conflict_claim">此摄像机已被添加过，需要该账号删除摄像机后，您才能添加
+</string>
+    <string name="other_account">其他网友</string>
+    <string name="add_account">网友</string>
+    <string name="wifi_error">生成WiFi信息错误，请重试！</string>
+    <string name="conn_to_wifi">连接WiFi</string>
+    <string name="add_camera_sel">添加摄像机</string>
+    <string name="set_network_notice">是否设置网络？</string>
+    <string name="set_wifi">选择摄像机要连接的WiFi</string>
+    <string name="wireless_conn">无线连接模式</string>
+    <string name="add_camera">选择要添加的摄像机</string>
+    <string name="set_mobile">设置移动网络</string>
+    <string name="open_network">请打开WiFi开关后再设置</string>
+    <string name="choose_wifi">请先选择WiFi</string>
+    <string name="choose_bindcamera">请先选择要连接的摄像机</string>
+    <string name="camera_setting_no_wifi_ap">扫描周围的WiFi失败，请重试</string>
+    <string name="camera_setting_no_camera_ap">扫描周围的摄像机失败，请重试</string>
+    <string name="add_first_step">第一步 准备摄像机</string>
+    <string name="add_second_step">第二步 连接WiFi</string>
+    <string name="add_third_step">第三步 添加摄像机</string>
+    <string name="add_fourth_step">第四步 摄像机名称</string>
+    <string name="config_hint_text1">请查看摄像机指示灯是否</string>
+    <string name="add_twinkle">闪烁</string>
+    <string name="cemera_name">名称</string>
+    <string name="red">红</string>
+    <string name="blue">蓝</string>
+    <string name="cancel">取消</string>
+    <string name="complete">完成</string>
+    <string name="add_twinkleed">已看到红蓝灯光闪烁</string>
+    <string name="add_untwinkle">没有红蓝闪烁？</string>
+    <string name="notify_title">红蓝灯没有交替闪烁？</string>
+    <string name="notify_step1">请重新插拔摄像机电源，确保电源和数据线插好</string>
+    <string name="notify_step2">请使用顶针轻插摄像机背面的reset孔，按住1S后松开听到"滴"声约10秒后指示灯变成红蓝灯交替闪烁表示复位成功。</string>
+    <string name="notify_step3">复位成功后，请再次添加摄像机</string>
+    <string name="config_hint_text21">用顶针轻插摄像机背后配置孔</string>
+    <string name="app_pwd_show">显示密码</string>
+    <string name="app_pwd_hint">隐藏密码</string>
+    <string name="refreshing">正在刷新。。</string>
+    <string name="wifi_scan_failure">扫描失败。。</string>
+    <string name="add_success">添加摄像机成功</string>
+    <string name="add_check_mycamera">马上查看我的摄像机吧</string>
+    <string name="get_my_camera">领取我的摄像机</string>
+    <string name="add_connecting">摄像机正在联网…</string>
+    <string name="add_connecting_camera">正在连接摄像机,请稍后…</string>
+    <string name="add_waiting_des">需要大约2分钟，您就可以用手机观看摄像机拍到的美景了</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="current_net_unused">当前网络不可用，请检查你的网络配置！</string>
+    <string name="bind_suc">绑定成功</string>
+    <string name="bind_fail">绑定失败</string>
+    <string name="net_error">网络异常，请稍后重试</string>
+    <string name="set_public_suc">已设为公众摄像机</string>
+    <string name="set_public_fail">设为公众摄像机失败</string>
+    <string name="input_nickname">输入昵称</string>
+
+    <string name="add_third_fail_notify">摄像机连网失败</string>
+    <string name="add_third_fail_of_save_wifi">保存摄像机热点至本地失败</string>
+    <string name="add_third_fail_getsn">摄像机SN获取失败</string>
+    <string name="add_third_fail_notify_msg">可能是您的摄像机配置的WiFi有问题，导致无法成功连接，请重新选择摄像机所要连接的WiFi再连接一次。</string>
+    <string name="add_third_fail_notify_again">重新添加摄像机</string>
+    <string name="add_third_fail_notify_gomain">返回首页</string>
+    <string name="add_can_not_back">正在添加摄像机，请稍等</string>
+    <string name="add_fourth_fail_notify">摄像机绑定失败</string>
+    <string name="add_fourth_fail_msg_notify">该摄像机已被绑定，请先解除绑定</string>
+    <string name="bind_type_select_title">请选择绑定方式</string>
+    <string name="bind_for_wifi">热点绑定</string>
+    <string name="bind_for_voice">声波绑定</string>
+    <string name="camera_is_binding">摄像机连网中....</string>
+
+
+    <!-- 注册 -->
+    <string name="register_title">注册</string>
+    <string name="pick_from_gallery">从相册中选择</string>
+    <string name="take_photo">拍照</string>
+    <string name="set_head">请设置头像</string>
+    <string name="set_nickname">请设置昵称</string>
+    <string name="app_reg_error">注册失败</string>
+    <string name="app_reset_error">设置失败</string>
+    <string name="app_reset_suc">密码重置设置成功</string>
+    <string name="app_reg_suc">注册成功</string>
+    <string name="app_regist_phone">手机号</string>
+    <string name="app_regist_identify">验证码</string>
+    <string name="app_regist_pwd">密码（不少于6位）</string>
+    <string name="app_reset_regist_pwd">重置密码</string>
+    <string name="app_new_pwd">新密码（不少于6位）</string>
+    <string name="reset_confirm">确定</string>
+
+    <!-- 我的 -->
+    <string name="mine">我</string>
+    <string name="mine_attention">我的关注</string>
+    <string name="mine_about">关于</string>
+    <string name="mine_file">我的文件</string>
+    <string name="mine_visual_telephone">视频电话</string>
+    <string name="mine_exit">退出登入</string>
+    <string name="mine_head">头像</string>
+    <string name="mine_name">昵称</string>
+    <string name="mine_phone">手机号</string>
+    <string name="mine_user_info">个人信息</string>
+    <string name="mine_upload_head_suc">头像上传成功</string>
+    <string name="mine_upload_head_fail">头像上传失败</string>
+    <string name="mine_save">保存</string>
+    <string name="mine_name_can_not_null">请输入昵称</string>
+    <string name="mine_commit_suc">提交成功</string>
+    <string name="mine_commit_fail">提交失败</string>
+    <string name="mine_myfile_all">全部</string>
+    <string name="mine_myfile_picture">图片</string>
+    <string name="mine_myfile_video">视频</string>
+    <string name="mine_myattention_cancel">取消关注</string>
+    <string name="mine_myattention">全部关注</string>
+    <string name="was_cancel">已取消</string>
+    <string name="title_activity_set">SetActivity</string>
+    <string name="mine_tel">手机号码：</string>
+    <string name="mine_file_not_exist">文件不存在</string>
+
+    <!-- 设置 -->
+    <string name="set">设置</string>
+    <string name="set_public">设为公众摄像机</string>
+    <string name="set_mic">麦克风</string>
+    <string name="set_definition">清晰度</string>
+    <string name="set_cloud_save">云存储</string>
+    <string name="set_relieve_bind">解除绑定</string>
+    <string name="set_definition_hd">超清</string>
+    <string name="set_definition_sd">高清</string>
+    <string name="set_definition_fluent">流畅</string>
+    <string name="set_suc">设置成功</string>
+    <string name="set_relieve_suc">已解除绑定</string>
+    <string name="set_null"></string>
+
+    <!-- 直播 -->
+    <string name="live_add_device">添加一个新设备</string>
+    <string name="live_title">要直播</string>
+    <string name="live_set_suc">设置成功</string>
+    <string name="live_set_fail">设置失败</string>
+    <string name="bind_input_camera_name">请输入摄像机名称</string>
+    <string name="app_network_error">网络已断开,请检查你的网络</string>
+
+    <!-- popupwindow -->
+    <string name="pp_camera_type">设备类型：</string>
+    <string name="pp_camera_location">设备位置：</string>
+    <string name="pp_camera_online_num">当前在线人数：</string>
+    <string name="pp_camera_total_watch_num">总观看次数：</string>
+    <string name="pp_camera_start_time">启动耗时：</string>
+
+
+    <string name="share_to_me">分享给我的摄像机</string>
+
+
+    <!-- 广场分组查询 -->
+    <string name="all">全部</string>
+    <string name="camera_player">摄像机直播</string>
+    <string name="mobile_player">手机直播</string>
+
+    <string name="tv_prepare_mobile_live">准备直播</string>
+    <string name="resolution">分辨率</string>
+    <string name="rate">码率</string>
+    <string name="frame_rate">帧率</string>
+    <string name="location">定位</string>
+    <string name="start_mobile_live">开始直播</string>
+    <string name="live_use_mobile">使用手机直播</string>
+    <string name="title_activity_mobile_player">MobilePlayerActivity</string>
+
+
+    <!--手机直播 -->
+    <string name="state_preparing">准备状态</string>
+    <string name="state_offline">离线状态</string>
+    <string name="state_error">网络不稳定，请重新连接手机</string>
+    <string name="state_connecting">正在连接中</string>
+    <string name="volume">音频</string>
+    <string name="findpwd_email_was_send">邮件已发送到邮箱，请前去查看</string>
+    <string name="back_to_home">返 回</string>
+    <string name="vol_on">静音</string>
+    <string name="vol_off">声音</string>
+
+    <!--手机互联-->
+    <string name="tv_mobile_calling">呼叫中</string>
+    <string name="calling_wait">正在等待对方应答...</string>
+    <string name="connect_client_fail">对方连接失败</string>
+    <string name="input_nickname_or_phonenumber">输入昵称或手机号查找用户</string>
+    <string name="video_call">视频通话</string>
+    <string name="invite_video_call"> 正在邀请您进行视频通话</string>
+    <string name="in_the_call">通话中</string>
+    <string name="title_activity_my_test">MyTestActivity</string>
+    <string name="connect_client_ing">连接中</string>
+    <string name="connect_fail">连接失败</string>
+    <string name="answer_refuse">对方拒绝接听</string>
+    <string name="has_been_hung_up">对方已挂断</string>
+    <string name="title_activity_called">CalledActivity</string>
+    <string name="close_ring">close_ring</string>
+    <string name="user_not_exist">用户不存在</string>
+    <string name="line_is_busy">您拨打的电话正在通话中，请稍候再拨</string>
+    <string name="can_not_call_myself">不能和自己视频通话</string>
+    <string name="connect_cloud_server_fail">连接云服务失败</string>
+    <string name="calling_end">通话结束</string>
+    <string name="connect_client_no_answer">对方无应答，请稍候再拨</string>
+    <string name="refuse_answer">对方拒绝接听</string>
+    <string name="no_answer_call_later">您拨打的电话无人接听，请稍候再拨</string>
+    <string name="have_open_microphone">已开启麦克风</string>
+    <string name="have_close_microphone">已关闭麦克风</string>
+    <string name="mars">火星</string>
+    <string name="calling_error">呼叫失败</string>
+
+    <string name="snapshot_suc">截图已保存</string>
+    <string name="snapshot_fail">截图失败</string>
+    <string name="live_over">结束直播</string>
+    <string name="live_over_again">确定要结束直播？</string>
+    <string name="confirm">确定</string>
+    <string name="is_gainning">正在获取...</string>
+
+    <string name="attract_num">共吸引%s位观众</string>
+    <string name="start_upgrade">开始升级</string>
+    <string name="is_upgrading">正在升级...</string>
+    <string name="exit">退出</string>
+    <string name="upgrade_in_background">后台升级</string>
+    <string name="next_time">下次再说</string>
+    <string name="try_again">再试一次</string>
+    <string name="token_overdue_login_again">Token验证已过期，请重新登录</string>
+    <string name="login_again">重新登录</string>
+    <string name="check_net_is_connect">后台登录失败，请检查网络设置</string>
+    <string name="connect_to_net">网络已断开，请连接网络</string>
+    <string name="platform_login_fail">平台登录失败</string>
+    <string name="remove_bind_of_camera">解除绑定</string>
+    <string name="confirm_remove_bind_of_camera">确定要解除绑定</string>
+    <string name="login_cloud_platform_success">云平台登录成功</string>
+    <string name="login_cloud_platform_fail">云平台登录失败</string>
+    <string name="system_prompt">系统提示</string>
+    <string name="confirm_unbind">确定要取消绑定吗？</string>
+    <string name="confirm_exit">确认退出？</string>
+    <string name="record_saved_to_my_file">录像已保存至我的文件</string>
+    <string name="click_to_refresh">点击刷新</string>
+    <string name="confirm_logout">确定退出当前用户?</string>
+    <string name="current_wifi_not_support">当前wifi 模式不受支持，类型：</string>
+    <string name="is_adding_camera_wait">正在添加摄像机，请稍等</string>
+    <string name="not_connect_wifi_now">当前尚未连接到wifi</string>
+    <string name="share_cancel_fail">取消分享失败！</string>
+    <string name="share_cancel_success">取消分享成功！</string>
+    <string name="has_shared_to_n_persons">已分享给%s位家人和朋友</string>
+    <string name="share_fail">分享失败！</string>
+    <string name="share_success">分享成功！</string>
+    <string name="get_shared_list_fail">获取分享用户列表失败！</string>
+    <string name="login_expire_login_again">对不起！你的设备登录已过期，或者你的账号已在其他设备登录！请选择</string>
+    <string name="app_exit">退出应用</string>
+    <string name="missed_call">未接来电</string>
+    <string name="video_call_support">向左滑动可显示在线用户列表\n该功能仅支持V2.2.1版本及以上\n该功能仅在用户登录状态下可用\n该功能仅在app唤醒状态下可用</string>
+    <string name="title_activity_login_test">LoginTestActivity</string>
+    <string name="title_activity_regist_and_reset_password">RegistAndResetPasswordActivity</string>
+    <string name="check_camera_permission">相机开启异常</string>
+    <string name="mobile_live_request_fail">手机直播请求失败</string>
+    <string name="get_camera_set_fail">获取配置失败</string>
+    <string name="unbind_fail">解除绑定失败</string>
+    <string name="faceimage_get_fail">头像获取失败</string>
+    <string name="delete_share">删除分享</string>
+    <string name="record">历史录像</string>
+    <string name="code_type">编码类型</string>
+    <string name="coding_soft">软编</string>
+    <string name="coding_hard">硬编</string>
+    <string name="title_activity_voice_binding">VoiceBindingActivity</string>
+    <string name="voice_binding_tip">请将手机调大音量并靠近摄像机</string>
+    <string name="voice_binding_countdown">秒后连接成功</string>
+    <string name="voice_binding_send">发送声波</string>
+    <string name="voice_send_success">发送成功</string>
+    <string name="next_step">下一步</string>
+    <string name="voice_send_ing">正在发送</string>
+    <string name="voice_conn_fail">摄像机连接失败，请重试</string>
+    <string name="call_history">通话记录</string>
+    <string name="online_users">在线用户</string>
+    <string name="get_online_users_fail">获取在线用户失败</string>
+    <string name="send_log">发送操作报告</string>
+    <string name="official_website">官方网站</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="confirm_send_log">确定发送操作日志报告？</string>
+    <string name="user_agreement_detail">
+        \n　　尊敬的用户您好，请您仔细阅读以下条款，如果您对本协议的任何条款表示异议，您可以选择不使用；
+        使用则意味着您将同意遵守本协议下全部规定，以及我们后续对使用协议随时所作的任何修改，并完全服从于我们的统一管理。
+
+\n\n第一章 总则
+
+\n\n第1条 羚羊视频云是羚羊视频云团队(以下统称“本团队”)向用户提供的一种更方便的进行视频直播和观看视频直播服务的平台。
+\n第2条 羚羊视频云所有权、经营权、管理权均属本团队。
+\n第3条 本协议最终解释权归属本团队。
+
+\n\n第二章 用户说明
+
+\n\n第4条 凡是下载、浏览和发布内容的用户均为羚羊视频云用户(以下统称“用户”)。
+\n第5条 用户的个人信息受到保护，不接受任何个人或单位的查询。国家机关依法查询除外，用户的个人设置公开除外。
+\n第6条 用户享有言论自由的权利。
+\n第7条 用户的言行不得违反《计算机信息网络国际联网安全保护管理办法》、《互联网信息服务管理办法》、《互联网电子公告服务管理规定》、《维护互联网安全的决定》、《互联网新闻信息服务管理规定》等相关法律规定，不得在羚羊视频云上发布、传播或以其它方式传送含有下列内容之一的信息：
+\n  1.反对宪法所确定的基本原则的；
+\n  2.危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
+\n  3.损害国家荣誉和利益的；
+\n  4.煽动民族仇恨、民族歧视、破坏民族团结的；
+\n  5.破坏国家宗教政策，宣扬邪教和封建迷信的；
+\n  6.散布谣言，扰乱社会秩序，破坏社会稳定的；
+\n  7.散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；
+\n  8.侮辱或者诽谤他人，侵害他人合法权利的；
+\n  9.煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；
+\n  10.以非法民间组织名义活动的；
+\n  11.含有虚假、有害、胁迫、侵害他人隐私、骚扰、侵害、中伤、粗俗、猥亵、或其它道德上令人反感的内容；
+\n  12.含有中国法律、法规、规章、条例以及任何具有法律效力之规范所限制或禁止的其它内容的。
+\n第8条 用户不得在羚羊视频云内发布任何形式的广告。
+\n第9条 用户应承担一切因其个人的行为而直接或间接导致的民事或刑事法律责任，因用户行为给本团队造成损失的，用户应负责赔偿。
+\n第10条 本团队拥有对违反协议的用户进行处理的权力，直至禁止其在羚羊视频云内发布信息。
+\n第11条 禁止任何使用非法软件进行刷内容、违规发布内容的行为。
+\n第12条 任何用户发现羚羊视频云上有内容涉嫌侮辱或者诽谤他人、侵害他人合法权益的或违反本协议的，有权进行直接举报。
+\n第13条 为了能够给广大用户提供一个优质的交流平台，同时使得羚羊视频云能够良性、健康的发展，将对涉及反动、色情和发布不良内容的用户，进行严厉处理。一经发现此类行为，将给予永久封禁并清空所有发言的处罚。
+
+\n\n第三章 权利声明
+
+\n\n第14条 羚羊视频云发布的内容仅代表作者观点，与本团队无关。对于用户言论的真实性引发的全部责任，由用户自行承担，本团队不承担任何责任。
+\n第15条 用户之间因使用羚羊视频云而产生或可能产生的任何纠纷和/或损失，由用户自行解决并承担相应的责任，与本团队无关。
+\n第16条 用户在羚羊视频云上发布的内容，本团队有权转载或引用。
+\n第17条 用户在任何时间段在羚羊视频云上发表的任何内容的著作财产权，用户许可本团队在全世界范围内免费地、永久性地、不可撤销地、可分许可地和非独家地使用的权利，包括但不限于：复制权、发行权、出租权、展览权、表演权、放映权、广播权、信息网络传播权、摄制权、改编权、翻译权、汇编权以及《著作权法》规定的由著作权人享有的其他著作财产权利。并且，用户许可本团队有权利就任何主体侵权而单独提起诉讼，并获得全部赔偿。
+
+\n\n第四章 处罚规则
+
+\n\n第18条 本团队郑重提醒用户，若出现下列情况任意一种或几种，将承担包括被关闭全部或者部分权限、被暂停或被禁止使用的后果，情节严重的，还将承担相应的法律责任。
+\n  1.使用不雅或不恰当昵称；
+\n  2.发布含有猥亵、色情、人身攻击和反政府言论等非法或侵权言论的；
+\n  3.从事非法商业活动；
+\n  4.假冒管理人员或破坏管理人员形象；
+\n  5.使用非法软件进行刷内容、违规发布内容的行为；
+\n  6.其他本团队认为不恰当的情况。
+\n\n第19条 凡文章出现以下情况之一，本团队管理人员有权不提前通知作者直接删除，并依照有关规定作相应处罚。情节严重者，本团队管理人员有权对其做出关闭部分权限、暂停直至禁止使用。
+\n  1.发表含有本协议第7条禁止发布、传播内容的文章；
+\n  2.发表无意义的灌水内容；
+\n  3.同一内容多次出现的；
+\n  4.违反本协议第8条的规定，发布广告的；
+\n  5.内容包含有严重影响用户浏览的内容或格式的；
+\n  6.其他本团队认为不恰当的情况。
+
+\n\n第五章 隐私保护
+
+\n\n第20条 羚羊视频云不对外公开或向第三方提供单个用户的注册资料及用户在使用网络服务时存储在本网站的非公开内容，但下列情况除外：
+\n  1.事先获得用户的明确授权；
+\n  2.根据有关的法律法规要求；
+\n  3.按照相关政府主管部门的要求；
+\n  4.该第三方同意承担与羚羊视频云同等的保护用户隐私的责任；
+在不透露单个用户隐私资料的前提下，羚羊视频云有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。
+
+\n\n第六章 附则
+
+\n\n第21条 关于打击网络谣言的司法解释：《最高人民法院、最高人民检察院关于办理利用信息网络实施诽谤等刑事案件适用法律若干问题的解释》已于2013年9月5日由最高人民法院审判委员会第1589次会议、2013年9月2日由最高人民检察院第十二届检察委员会第9次会议通过，现予公布，自2013年9月10日起施行。
+\n第22条 所有用户发布的内容而引起的法律纠纷，与本团队无关。
+\n第23条 羚羊视频云如因系统维护或升级等而需暂停服务时，将事先公告。若因硬件故障或其它不可抗力而导致暂停服务，于暂停服务期间造成的一切不便与损失，本团队不负任何责任。由于羚羊的产品调整导致信息丢失和/或其他结果的，本团队不承担任何责任。
+\n第24条 本协议未涉及的问题参见国家有关法律法规，当本协议与国家法律法规冲突时，以国家法律法规为准。\n
+</string>
+    <string name="send_success">发送成功</string>
+    <string name="send_fail">发送失败</string>
+    <string name="log_not_exist">暂无日志文件</string>
+    <string name="already_shared">已分享给该用户！</string>
+    <string name="back_live">返回实时</string>
+    <string name="menu_add_camera_sel">添加摄像机</string>
+    <string name="menu_go_to_public">去广场看看</string>
+    <string name="menu_mobile_live">手机直播</string>
+    <string name="public_camera">广场</string>
+    <string name="input_nickname_or_cname"><font size="12">输入用户名或摄像机名或手机号</font></string>
+    <string name="input_keyword">请输入搜索关键字</string>
+    <string name="not_found">没有找到相关摄像机或直播</string>
+    <string name="press_to_talk">按住说话</string>
+    <string name="copy_play_address">复制HLS播放地址</string>
+    <string name="update_history">版本记录</string>
+    <string name="getting_rate">获取中</string>
+    <string name="hls_addr_get_failed">未获取到HLS地址</string>
+    <string name="hls_addr_copy_success">已复制HLS地址至剪贴板</string>
+    <string name="log_sending">发送中...</string>
+    <string name="app_download">APP下载</string>
+    <string name="app_download_url_copy">羚羊视频云app下载地址已复制至剪贴板</string>
+</resources>

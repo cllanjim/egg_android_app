@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_above"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+
+    <include layout="@layout/mobile_live_top"/>
+
+    <EditText
+        android:id="@+id/et_mobile_live_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        android:hint="点此输入直播标题"
+        android:maxLength="14"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_white"
+        android:textSize="20sp"/>
+    <!--直播參數-->
+    <LinearLayout
+        android:id="@+id/ll_prepare_mobile_live"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/PrepareMobileLiveRLStyle">
+
+            <TextView
+                style="@style/PrepareMobileLiveTextStyle"
+                android:drawableLeft="@drawable/ic_resolution"
+                android:text="@string/resolution"/>
+
+            <TextView
+                android:id="@+id/tv_resolution_value"
+                style="@style/PrepareMobileLiveRateValueStyle"
+                android:layout_toLeftOf="@+id/tb_mobile_live_resolution"
+                android:layout_toStartOf="@+id/tb_mobile_live_resolution"
+                android:text="   "/>
+
+            <ToggleButton
+                android:id="@+id/tb_mobile_live_resolution"
+                style="@style/PrepareMobileLiveToggleArrowStyle"
+                android:checked="false"/>
+        </RelativeLayout>
+
+        <include layout="@layout/horizon_line_white"/>
+
+        <RelativeLayout style="@style/PrepareMobileLiveRLStyle">
+
+            <TextView
+                style="@style/PrepareMobileLiveTextStyle"
+                android:drawableLeft="@drawable/ic_rate"
+                android:text="@string/rate"/>
+
+            <TextView
+                android:id="@+id/tv_rate_value"
+                style="@style/PrepareMobileLiveRateValueStyle"
+                android:layout_toLeftOf="@+id/tb_mobile_live_rate"
+                android:layout_toStartOf="@+id/tb_mobile_live_rate"
+                android:text="   "/>
+
+            <ToggleButton
+                android:id="@+id/tb_mobile_live_rate"
+                style="@style/PrepareMobileLiveToggleArrowStyle"
+                android:checked="false"/>
+        </RelativeLayout>
+
+        <include layout="@layout/horizon_line_white"/>
+
+        <!--<RelativeLayout style="@style/PrepareMobileLiveRLStyle">
+
+            <TextView
+                style="@style/PrepareMobileLiveTextStyle"
+                android:drawableLeft="@drawable/ic_frame_rate"
+                android:text="@string/frame_rate" />
+
+            <TextView
+                android:id="@+id/tv_frame_rate_value"
+                style="@style/PrepareMobileLiveRateValueStyle"
+                android:layout_toLeftOf="@+id/tb_mobile_live_frame_rate"
+                android:layout_toStartOf="@+id/tb_mobile_live_frame_rate"
+                android:text="   " />
+
+            <ToggleButton
+                android:id="@+id/tb_mobile_live_frame_rate"
+                style="@style/PrepareMobileLiveToggleArrowStyle"
+                android:checked="false" />
+        </RelativeLayout>
+
+        <include layout="@layout/horizon_line_white"></include>-->
+
+        <RelativeLayout style="@style/PrepareMobileLiveRLStyle">
+
+            <TextView
+                style="@style/PrepareMobileLiveTextStyle"
+                android:drawableLeft="@drawable/ic_vioce_withe"
+                android:text="@string/volume"/>
+
+            <CheckBox
+                android:id="@+id/cb_mobile_live_volume"
+                style="@style/CommonCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/horizon_line_white"/>
+
+        <RelativeLayout style="@style/PrepareMobileLiveRLStyle">
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/PrepareMobileLiveTextStyle"
+                android:drawableLeft="@drawable/ic_location_withe"
+                android:text="@string/location"/>
+
+            <TextView
+                android:id="@+id/tv_mobile_location"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="70dp"
+                android:layout_toEndOf="@+id/tv"
+                android:layout_toRightOf="@+id/tv"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="  "
+                android:textColor="@color/text_white"/>
+
+            <CheckBox
+                android:id="@+id/cb_mobile_live_location"
+                style="@style/CommonCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/horizon_line_white"/>
+
+        <RelativeLayout style="@style/PrepareMobileLiveRLStyle">
+
+            <TextView
+                style="@style/PrepareMobileLiveTextStyle"
+                android:drawableLeft="@drawable/ic_frame_rate"
+                android:text="@string/code_type"/>
+
+            <TextView
+                android:id="@+id/tv_code_type_value"
+                style="@style/PrepareMobileLiveRateValueStyle"
+                android:layout_toLeftOf="@+id/tb_mobile_live_code_type"
+                android:layout_toStartOf="@+id/tb_mobile_live_code_type"
+                android:text="@string/coding_hard"/>
+
+            <ToggleButton
+                android:id="@+id/tb_mobile_live_code_type"
+                style="@style/PrepareMobileLiveToggleArrowStyle"
+                android:checked="false"/>
+        </RelativeLayout>
+
+
+        <include layout="@layout/horizon_line_white"/>
+
+        <TextView
+            android:id="@+id/tv_start_mobile_live"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/shape_start_mobile_live_bg"
+            android:gravity="center"
+            android:text="@string/start_mobile_live"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <!--正在直播-->
+    <include layout="@layout/layout_mobile_live"/>
+    <!--直播結束-->
+    <include layout="@layout/layout_mobile_live_end"/>
+
+
+</RelativeLayout>

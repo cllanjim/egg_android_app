@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/color/vpi__dark_theme.xml",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/color/tab_indicator_color.xml",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/color/tab_indicator_color.xml"
+    },
+    {
+        "merged": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/res/merged/androidTest/debug/color/vpi__light_theme.xml",
+        "source": "/Users/liaolei/antelope/APP/Antelope_app/com.lingyang.base/build/intermediates/bundles/debug/res/color/vpi__light_theme.xml"
+    }
+]

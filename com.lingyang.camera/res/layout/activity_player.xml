@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headerview"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <!--<Button
+            android:id="@+id/iv_heder_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_button_back"
+            android:onClick="onClick_Back" />-->
+
+        <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_dark"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/btn_set_fullscreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_all_screen"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/videoplayer_layout"
+        layout="@layout/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/videoplayer_layout"
+        android:layout_marginBottom="0dp"
+        android:background="@color/app_back"
+        android:orientation="vertical">
+
+       <!-- <include
+            layout="@layout/layout_live_mine_params"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <include
+            layout="@layout/layout_live_params"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />-->
+
+        <include
+            layout="@layout/horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <include
+            layout="@layout/layout_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            layout="@layout/layout_other_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--<include
+            layout="@layout/layout_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

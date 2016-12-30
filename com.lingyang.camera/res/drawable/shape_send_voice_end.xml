@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/send_voice_end" />
+
+    <corners
+        android:bottomLeftRadius="58dp"
+        android:bottomRightRadius="58dp"
+        android:topLeftRadius="58dp"
+        android:topRightRadius="58dp" >
+    </corners>
+
+</shape>

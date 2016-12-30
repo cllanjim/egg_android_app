@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_top"
+        android:id="@+id/rl_home_header">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_main_title_mine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="我的"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/tv_main_title_public"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:gravity="center_horizontal"
+                android:text="广场"
+                android:textColor="@color/text_dark"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_main_title_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:scaleType="center"
+            android:layout_marginRight="17dp"
+            android:src="@drawable/button_add" />
+        <CheckBox
+            android:id="@+id/btn_main_title_group"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:scaleType="center"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/bg_group"
+            android:checked="false"
+            android:visibility="gone"
+            />
+         <ImageView
+            android:id="@+id/iv_indicator"
+            android:layout_width="@dimen/tab_indicator_width"
+            android:layout_height="5dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/down"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mine_bg_gray"
+        android:clickable="false"
+        android:flipInterval="30"
+        android:layout_below="@+id/rl_home_header"
+        android:focusable="false" />
+
+
+
+
+</RelativeLayout>
